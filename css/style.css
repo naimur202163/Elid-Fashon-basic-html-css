@@ -13,8 +13,8 @@ body {
   border: none;
 }
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+  border: 1px solid rgb(6, 52, 90);
+  width: 250px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
@@ -42,12 +42,22 @@ body {
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
-  border: 1px solid cyan;
+  border: 1px solid rgb(43, 59, 59);
+  /* background-color: rgb(216, 211, 211); */
 }
 .product-image {
   width: 150px;
   height: 150px;
 }
+
+/* Singel Product */
+.single-product{
+  width: 282px;
+  height:450px;
+}
+
+
+
 .cart {
   width: 350px;
   /* border: 1px solid green; */
