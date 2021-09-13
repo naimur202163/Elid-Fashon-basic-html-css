@@ -16,17 +16,17 @@ const showProducts = (products) => {
     const div = document.createElement("div");
     div.classList.add("product");
     // displaying Products
-    div.innerHTML = `<div class="single-product">
+    div.innerHTML = `<div class="single-product p-3 my-5">
       <div>
     <img class="product-image" height="150px" width="150px" src=${image }></img>
       </div>
-      <h3>${product.title}</h3>
+      <h3>${product.title.slice(0,20)}</h3>
       <p>Category: ${product.category}</p>
       <h2>Price: $ ${product.price}</h2>
       <h3>Rating:${product.rating.rate} </h3>
-      <h4>Average Rating ${product.rating.count} </h4>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-      <button id="details-btn" class="btn btn-warnin">Details</button></div>
+      <h4>Total Rating ${product.rating.count} </h4>
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success p-2">add to cart</button>
+      <button id="details-btn" class="btn btn-warnin p-2">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
